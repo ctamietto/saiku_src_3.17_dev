@@ -159,8 +159,8 @@ var SessionWorkspace = Backbone.Model.extend({
             var paramsURI = Saiku.URLParams.paramsURI();
 
             if (!(_.has(paramsURI, 'splash'))) {
-                //paramsURI.splash = false;
-		paramsURI.splash = true;
+                paramsURI.splash = false;
+		        //paramsURI.splash = true;
             }
             else if (_.has(paramsURI, 'splash') && paramsURI.splash ||
                 _.has(paramsURI, 'splash') && paramsURI.splash === null) {
